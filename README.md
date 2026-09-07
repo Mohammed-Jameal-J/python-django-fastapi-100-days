@@ -26,6 +26,7 @@ Naan [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days) c
 | Day | Topic | Status | Confluence Link |
 |---|---|---|---|
 | 01 | Intro to Python | ✅ Done | [Confluence](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/pages/38928385/Day+01+Intro+to+Python) |
+| 02 | Variables, Operators & Expressions | ✅ Done | [Confluence](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/pages/38961165/Day+02+Variables+Operators+Expressions) |
 
 ## Repo Structure
 
