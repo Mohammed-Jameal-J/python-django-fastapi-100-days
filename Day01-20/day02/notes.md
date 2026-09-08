@@ -1,45 +1,51 @@
 # Day 02 — Variables, Operators & Expressions
 
-## 1. Topic Explanation (Tanglish)
+## 1. Topic Explanation
 
-Day 1-la variables create panradhu, print/input use panradhu paathom. Ippo andha variables-ah vachi operations eppadi pannuradhu nu paakalaam.
+Day 1 covered creating variables and using print/input. Now let's look at how to perform operations on those variables.
 
-**Arithmetic operators** — calculation panna:
+**Arithmetic operators** — for calculations:
 
 | Operator | Meaning | Example |
 |---|---|---|
 | `+` | Addition | `5 + 3 = 8` |
 | `-` | Subtraction | `5 - 3 = 2` |
 | `*` | Multiplication | `5 * 3 = 15` |
-| `/` | Division (always float result) | `5 / 2 = 2.5` |
-| `//` | Floor division (whole number, decimal cut) | `5 // 2 = 2` |
+| `/` | Division (always returns a float) | `5 / 2 = 2.5` |
+| `//` | Floor division (whole number, decimal dropped) | `5 // 2 = 2` |
 | `%` | Modulus (remainder) | `5 % 2 = 1` |
 | `**` | Exponent (power) | `5 ** 2 = 25` |
 
-`/` and `//`-ku difference romba per confuse aaguvanga: `5 / 2` always float kudukkum (`2.5`), `5 // 2` decimal part cut panni whole number kudukkum (`2`). `%` (modulus) oru number odd-a even-a check panna romba use aagum.
+The difference between `/` and `//` trips up a lot of beginners: `5 / 2` **always** returns a float (`2.5`), while `5 // 2` drops the decimal part and returns a whole number (`2`). `%` (modulus) is very useful for checking whether a number is odd or even — an even number always gives `0` when you do `% 2`.
 
-**Comparison operators** — rendu values compare panna, result eppovume `True`/`False` (`bool`): `==`, `!=`, `>`, `<`, `>=`, `<=`.
+**Comparison operators** — compare two values, the result is always `True` or `False` (a `bool`): `==`, `!=`, `>`, `<`, `>=`, `<=`.
 
-**Important:** `=` (assignment) vs `==` (comparison) — vera vera. `if age = 18` error kudukkum, `if age == 18` dhaan correct.
+**Important:** `=` and `==` are completely different. `=` is **assignment** (storing a value), `==` is **comparison** (checking equality). This is a very common beginner mistake — `if age = 18` throws an error in Python, `if age == 18` is correct.
 
-**Logical operators** — multiple conditions combine panna: `and` (rendும் true), `or` (edhavadhu ondru true), `not` (reverse).
+**Logical operators** — combine multiple conditions: `and`, `or`, `not`.
 
-**Operator precedence** — BODMAS madhiri: `**` first, apparam `* / // %`, apparam `+ -`, apparam comparisons, last `and/or`. Confusion irundha `()` vachi group pannikonga.
+- `age >= 18 and has_id == True` — only overall `True` if **both** are true
+- `is_weekend or is_holiday` — overall `True` if **either** is true
+
+**Operator precedence** — similar to the BODMAS/PEMDAS rules from school: `**` first, then `* / // %`, then `+ -`, then comparison operators, and `and`/`or` last. When in doubt, use `()` to make the order explicit — it's the safest option.
 
 ## 2. Real-World Analogy
 
-Grocery bill calculator: `price * quantity` (arithmetic) → total calculate panna. `total >= 500` (comparison) → free delivery eligible-a check panna. `total >= 500 and is_member == True` (logical) → rendும் satisfy aaganum-a check panna.
+Think of a **grocery bill calculator**:
+- `price * quantity` → an arithmetic operator used to calculate the total
+- `total >= 500` → a comparison operator, checking "is this eligible for free delivery?"
+- `total >= 500 and is_member == True` → a logical operator, checking "does it need free delivery eligibility **AND** membership status?"
 
-Club bouncer: `age >= 18 and has_valid_id == True` — rendும் true-va irundhaal mattum entry.
+Or a club bouncer: `age >= 18 and has_valid_id == True` — both conditions need to be satisfied before entry is allowed.
 
-## 3. Code Walkthrough (`examples.py`)
+## 3. Code Walkthrough
 
 See `examples.py` in this folder — bill calculation with arithmetic operators, free-delivery eligibility with comparison + logical operators, and floor division/modulus for splitting items into boxes.
 
 ## 4. Key Takeaways
 
 - Arithmetic: `+ - * / // % **` — know the difference between `/` and `//`
-- Comparison: `== != > < >= <=` — result is always a `bool`
+- Comparison: `== != > < >= <=` — the result is always a `bool`
 - Logical: `and`, `or`, `not` — combine multiple conditions
 - `=` is assignment, `==` is comparison — never confuse them
 - Use `()` to make operator precedence explicit when in doubt

@@ -1,52 +1,52 @@
 # Day 01 — Intro to Python
 
-## 1. Topic Explanation (Tanglish)
+## 1. Topic Explanation
 
-Python nu solra ஒரு **high-level, general-purpose programming language**. High-level nu sonna, machine-oda 0s and 1s language-la nee code eluthanum nu illa — nee almost English madhiri eluthina code-ah, Python andha machine-oda language-ku translate pannikkum.
+Python is a **high-level, general-purpose programming language**. "High-level" means you don't have to write in the machine's raw 0s and 1s — you write code that reads almost like plain English, and Python translates it into instructions the machine understands.
 
-Rendu vidhamana languages irukku:
+There are two broad categories of languages:
 
-- **Compiled languages** (C, C++): Nee full code-ah eluthi mudichathukku aprom, oru **compiler** andha muzhu code-ayum onnaa translate panni, oru `.exe` madhiri executable file create pannum. Apparam dhaan run pannuvom. Edhaavadhu mistake irundha, run pannradhukku munnadiye compile stage-la error varum.
-- **Interpreted languages** (Python): Ivlo simple-a illa. Python-oda **interpreter** nee eluthina code-ah, **line by line** padichu, andha nerathulaye run pannikittu poidum. Adhunaala dhaan Python-la code eluthi udane run pannalaam — compile step thevai illa.
+- **Compiled languages** (C, C++): You write the entire program first, then a **compiler** translates the whole thing at once into an executable file. Only after that do you run it. If there's a mistake anywhere, it's usually caught before the program ever runs.
+- **Interpreted languages** (Python): Different story. The Python **interpreter** reads your code **line by line** and executes each line as it reads it. That's why you can write a Python script and run it immediately — there's no separate compile step.
 
-Idhu vachu dhaan Python:
-- Padikka romba easy (English syntax-ah nerukkama iruku)
-- Fast-a prototype pannalaam (web apps, data science, automation, AI — ellaathukkum use aagum)
-- "Batteries included" — நிறைய built-in libraries already irukku
+This is what makes Python:
+- Easy to learn (syntax stays close to English)
+- Fast to prototype with
+- "Batteries included" — a huge standard library ships with it out of the box
 
-**Python install pannradhu எப்படி:**
-1. python.org-ல irundhu latest version download pannunga
-2. Terminal/CMD-la `python --version` nu type panni check pannunga
-3. Rendu vidhama Python run pannalaam:
-   - **REPL / Interactive mode**: Terminal-la `python` nu type panna, oru `>>>` prompt varum. Ange line by line command podalaam, udane result kaamikkum. Idhu quick testing-ku nallaadhu.
-   - **Script mode**: `.py` extension-la oru file eluthi, `python filename.py` nu run pannuvom. Real projects ellaam idhu madhiri dhaan irukkum.
+**How to run Python:**
+1. Download the latest version from python.org
+2. Check the install with `python --version` in your terminal
+3. Two ways to run code:
+   - **REPL / Interactive mode**: type `python` in a terminal and you get a `>>>` prompt. Great for quick one-off testing.
+   - **Script mode**: write a `.py` file and run it with `python filename.py`. This is how real projects work.
 
-**Comments** — code-la nama pottukira notes, interpreter idha ignore pannidum:
-- Single line: `# idhu comment`
-- Multi-line / docstring: `""" ... """` moonu double-quotes-oda block
+**Comments** — notes in your code that the interpreter ignores:
+- Single line: `# this is a comment`
+- Multi-line / docstring: a block wrapped in `""" ... """`
 
 ## 2. Real-World Analogy
 
-Ithu oru **restaurant-la translator** irukkara scene madhiri nினைச்சுக்குங்க:
+Think of a **translator standing next to you in a restaurant**:
 
-- **Compiled language** = Nee oru foreign country-ku poi, unnoda full menu order-ah munnadiyே ஒரு translator-kitta kudutha, avaru andha full order-ayum translate panni, waiter-kitta kudukkaraan. Apparam dhaan cooking start aagum. Full translation mudinja aprom dhaan process start.
-- **Interpreted language (Python)** = Nee waiter-kitta pேசும்போதே, translator unnoda ஒவ்வொரு வாக்கியத்தையும் **real-time-ல** translate panni sollikittu irukkaru. Nee "I want water" sona udane, andha vaakiyam mattum translate aagi waiter-ku pogum. Adhukkulla unnoda next sentence-ah yosikkalaam.
+- **Compiled language** = You write your entire order in advance, hand it to a translator, and they translate the whole thing before the waiter ever sees it. Cooking only starts once the full translation is done.
+- **Interpreted language (Python)** = The translator is translating each sentence in real time as you speak to the waiter. You say "I want water," it gets translated and sent immediately. If your next sentence has a mistake, only that sentence causes a problem — everything before it already went through.
 
-Athanaala dhaan Python-la, oru line-la mistake irundha, andha line varaikkum run aagum, apparamdhaan error varum — full program-ah first translate pannala.
+That's why in Python, a script can run fine up to a certain line and then fail — the interpreter never checked the whole file up front.
 
-## 3. Code Walkthrough (`examples.py`)
+## 3. Code Walkthrough
 
 ```python
 # hello.py — Day 1 first program
 
-# 1. print() function — screen-la output kaamikka use pannuvom
-print("Vanakkam, Python world!")
+# 1. print() — displays output on the screen
+print("Hello, Python world!")
 
-# 2. Variable — oru value-ah store panna oru "peru" (name) kudukkarom
+# 2. Variable — a name that stores a value
 name = input("Enter your name: ")
 
-# 3. f-string — variable value-ah string-oda inject panna
-print(f"Vanakkam, {name}! Welcome to Day 1 of Python 100 Days.")
+# 3. f-string — inject a variable's value into a string
+print(f"Hello, {name}! Welcome to Day 1 of Python 100 Days.")
 
 # 4. Multiple variables, different data types
 age = 21          # int
@@ -58,16 +58,16 @@ print(f"{name} is {age} years old, lives in {city}. Learning Python: {is_learnin
 
 **Line by line:**
 
-1. `# hello.py — Day 1 first program` — comment, interpreter ignore pannidum. Just readability-ku.
-2. `print("Vanakkam, Python world!")` — `print()` oru **built-in function**. Adhoda arguments (`""`-la irukra string) screen-la output-a kaamikkum.
-3. `name = input("Enter your name: ")` — `input()` function user-kitta irundhu keyboard-la irundhu text vaangum. `=` (assignment operator) andha vaangina value-ah `name` nu oru variable-la store pannudhu.
-4. `print(f"Vanakkam, {name}! ...")` — `f` prefix vachi eludhina string-ah **f-string** nu solluvom. `{name}` place-la, `name` variable-oda current value automatic-a substitute aagum.
-5. `age = 21`, `city = "Coimbatore"`, `is_learning = True` — moonu vera vera **data types**: `int` (whole number), `str` (text, quotes-la irukkum), `bool` (True/False).
-6. Last `print()` — multiple variables-ah oru single f-string-la combine panniruken.
+1. `# hello.py — Day 1 first program` — a comment; the interpreter ignores it. Just for readability.
+2. `print("Hello, Python world!")` — `print()` is a **built-in function**. Whatever you pass it gets shown on screen.
+3. `name = input("Enter your name: ")` — `input()` reads text typed by the user. `=` (assignment) stores the value in a variable called `name`.
+4. `print(f"Hello, {name}! ...")` — the `f` prefix marks an **f-string**. `{name}` gets replaced with the current value of the `name` variable automatically.
+5. `age = 21`, `city = "Coimbatore"`, `is_learning = True` — three different **data types**: `int` (whole number), `str` (text), `bool` (True/False).
+6. Final `print()` — combines multiple variables into one f-string.
 
 ## 4. Key Takeaways
-- Python **interpreted** language — line by line execute aagum
-- `print()` → output kaamikka, `input()` → input vaangikka
-- Variables-ku data type declare pannanum nu kட்டாயம் illa (dynamically typed)
-- `#` single line comment, `""" """` multi-line
-- f-strings (`f"..."`) — variables-ah string-la clean-a embed panna best way
+- Python is an **interpreted** language — it executes line by line
+- `print()` for output, `input()` for taking input
+- Variables don't need an explicit type declaration (dynamically typed)
+- `#` for single-line comments, `""" """` for multi-line
+- f-strings (`f"..."`) are the cleanest way to embed variables in a string
