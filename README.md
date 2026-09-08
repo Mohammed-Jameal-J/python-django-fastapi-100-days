@@ -28,6 +28,7 @@ Naan [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days) c
 | 01 | Intro to Python | ✅ Done | [Confluence](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/pages/38928385/Day+01+Intro+to+Python) |
 | 02 | Variables, Operators & Expressions | ✅ Done | [Confluence](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/pages/38961165/Day+02+Variables+Operators+Expressions) |
 | 03 | Branching / Conditional Statements | ✅ Done | [Confluence](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/pages/39288834/Day+03+Branching+Conditional+Statements) |
+| 04 | Loops (for and while) | ✅ Done | [Confluence](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/pages/39321602/Day+04+Loops+for+and+while) |
 
 ## Repo Structure
 
