@@ -1,9 +1,8 @@
-# Python + Django + FastAPI — 100 Days (Tanglish Edition)
+# Python + Django + FastAPI — 100 Days
 
-Naan [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days) curriculum-ah follow pannitu, Day 1 to Day 100 varaikkum Tanglish-la (Tamil + English mix) padikkarathukaaga intha repo maintain pannuren. Django section (Day 46-60) kூடa FastAPI bonus track parallel-a add pannirukken.
+My personal day-by-day journey learning Python backend development — from the fundamentals through Django, FastAPI, databases, web scraping, data analysis, and machine learning. Each day gets its own notes, runnable examples, and a practice exercise, committed directly to `main`.
 
-- **Original curriculum:** [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days)
-- **Confluence space (detailed notes + diagrams):** [Python-100-Days folder](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/folder/38895617)
+- **Confluence space (detailed notes + diagrams, in Tanglish):** [Python-100-Days folder](https://mohammedjameal031.atlassian.net/wiki/spaces/~712020088a83b764e94e5f81b2918f0c1ef074/folder/38895617)
 - **Workflow:** Direct commits to `main`, one commit per day (or per topic if a day splits into multiple sessions).
 
 ## Curriculum Coverage
@@ -41,6 +40,6 @@ python-django-fastapi-100-days/
 ```
 
 Each day folder has:
-- `notes.md` — Tanglish explanation + real-world analogy + line-by-line code walkthrough
+- `notes.md` — explanation + real-world analogy + line-by-line code walkthrough (also mirrored to Confluence in Tanglish)
 - `examples.py` — working example code from the walkthrough
-- `workout.py` — 2-3 practice exercises + a mini project (with solutions)
+- `workout.py` — practice exercise(s) with solution
