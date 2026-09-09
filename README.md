@@ -40,6 +40,6 @@ python-django-fastapi-100-days/
 ```
 
 Each day folder has:
-- `notes.md` — explanation + real-world analogy + line-by-line code walkthrough (also mirrored to Confluence in Tanglish)
-- `examples.py` — working example code from the walkthrough
-- `workout.py` — practice exercise(s) with solution
+- `notes.md` - explanation + real-world analogy + line-by-line code walkthrough (also mirrored to Confluence in Tanglish)
+- `examples.py` - working example code from the walkthrough
+- `workout.py` - practice exercise(s) with solution
